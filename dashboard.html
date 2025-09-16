@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | DitzyCreateWeb1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Selamat Datang di DitzyCreateWeb1 🎉</h2>
+    <p id="show-ip">Your IP: ...</p>
+    <button onclick="logout()">Logout</button>
+
+    <hr style="margin:20px 0;">
+
+    <h3>🚀 Buat Website Otomatis</h3>
+    <form id="deployForm">
+      <input type="text" id="siteName" placeholder="Nama Website" required>
+      <input type="file" id="zipFile" accept=".zip" required>
+      <button type="submit">Buat Sekarang</button>
+    </form>
+
+    <p id="deployStatus"></p>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
